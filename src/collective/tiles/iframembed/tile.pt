@@ -1,0 +1,11 @@
+<div tal:attributes="class view/portlet_class"
+    tal:define="title view/data/title|nothing;
+                ">
+
+    <!-- BODY -->
+    <div class="tile-text">
+      <iframe tal:attributes="src view/get_domain" src="" width="100%" height="800px">
+      </iframe>
+    </div>
+
+</div>
