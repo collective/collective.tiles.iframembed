@@ -19,11 +19,51 @@ class IFrameEmbedTile(model.Schema):
         required=True
     )
 
-    domain_to_embed = schema.Choice(
-        title=_('label_tile_domain', u'Domain'),
-        description=_('help_tile_domain', u'Choose a domain to embed into a iframe'),
-        required=False,
-        vocabulary='collective.tiles.iframembed.vocabularies.DomainsVocabulary'
+    # url_to_embed = schema.Choice(
+    #     title=_('label_tile_domain', u'Domain'),
+    #     description=_('help_tile_domain', u'Choose a domain to embed into a iframe'),
+    #     required=False,
+    #     vocabulary='collective.tiles.iframembed.vocabularies.DomainsVocabulary'
+    # )
+
+    url_to_embed = schema.TextLine(
+        title=_('label_tile_width', u'Url to embed'),
+        required=False
+    )
+
+    width = schema.TextLine(
+        title=_('label_tile_width', u'Iframe width'),
+        required=False
+    )
+
+    height = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe height'),
+        required=False
+    )
+
+    frameborder = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe frameborder'),
+        required=False
+    )
+
+    allowfullscreen = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe allowfullscreen'),
+        required=False
+    )
+
+    style = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe style'),
+        required=False
+    )
+
+    scrolling = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe scrolling'),
+        required=False
+    )
+
+    allowTransparency = schema.TextLine(
+        title=_('label_tile_heigth', u'Iframe allowTransparency'),
+        required=False
     )
 
 

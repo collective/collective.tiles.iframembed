@@ -1,10 +1,25 @@
-<div tal:attributes="class view/portlet_class"
+<div tal:attributes="class view/data/title"
     tal:define="title view/data/title|nothing;
                 ">
 
     <!-- BODY -->
-    <div class="tile-text">
-      <iframe tal:attributes="src view/get_domain" src="" width="100%" height="800px">
+    <div class="tile-text"
+         tal:define="width view/data/width|nothing;
+                     height view/data/height|nothing;
+                     frameborder view/data/frameborder|nothing;
+                     allowfullscreen view/data/allowfullscreen|nothing;
+                     scrolling view/data/scrolling|nothing;
+                     allowTransparency view/data/allowTransparency|nothing;
+                     style view/data/style|nothing;
+                     url view/data/url_to_embed;">
+
+      <iframe tal:condition="view/iframe_validation" src="${url}" width="${width}" height="${height}"
+        frameborder="${frameborder}" allowfullscreen="${allowfullscreen}"
+        scrolling="${scrolling}" allowTransparency="${allowTransparency}"
+        style="${style}">
+      </iframe>
+
+      <iframe tal:condition="python: not view.iframe_validation()" src="errorPage" scrolling="no">
       </iframe>
     </div>
 
