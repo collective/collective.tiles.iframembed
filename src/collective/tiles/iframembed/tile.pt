@@ -18,7 +18,7 @@
         style="${style}">
       </iframe>
 
-      <iframe tal:condition="python: not view.iframe_validation()" src="errorPage" scrolling="no">
+      <iframe tal:condition="python: not view.iframe_validation()" src="" scrolling="no">
       </iframe>
     </div>
 
