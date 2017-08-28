@@ -2,7 +2,6 @@
     tal:define="title view/data/title|nothing;
                 ">
 
-    <!-- BODY -->
     <div class="tile-text"
          tal:define="width view/data/width|nothing;
                      height view/data/height|nothing;

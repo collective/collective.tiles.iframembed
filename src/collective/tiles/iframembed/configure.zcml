@@ -73,10 +73,5 @@
       for="*"
       />
 
-      <!-- vocabularies -->
-      <utility
-        component=".vocabularies.DomainsVocabularyFactory"
-        name="collective.tiles.iframembed.vocabularies.DomainsVocabulary"
-        />
 
 </configure>
