@@ -3,7 +3,9 @@
                 ">
 
     <div class="tile-text"
-         tal:define="width view/data/width|nothing;
+         tal:define="title view/data/title|nothing;
+                     show_title view/data/show_title|nothing;
+                     width view/data/width|nothing;
                      height view/data/height|nothing;
                      frameborder view/data/frameborder|nothing;
                      allowfullscreen view/data/allowfullscreen|nothing;
@@ -12,6 +14,10 @@
                      style view/data/style|nothing;
                      url view/data/url_to_embed;">
 
+       <h3 class="tileTitle"
+            tal:condition="show_title">
+            <span tal:content="title">Tile title</span>
+      </h3>
       <iframe tal:condition="view/iframe_validation" src="${url}" width="${width}" height="${height}"
         frameborder="${frameborder}" allowfullscreen="${allowfullscreen}"
         scrolling="${scrolling}" allowTransparency="${allowTransparency}"

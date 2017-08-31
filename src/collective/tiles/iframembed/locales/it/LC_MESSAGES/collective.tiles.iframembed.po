@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,7 +12,7 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.tiles.iframembed\n"
+"Domain: DOMAIN\n"
 
 #: ../configure.zcml:74
 msgid "A tile to embed only iframe for specific domains"
@@ -23,7 +20,7 @@ msgstr ""
 
 #: ../interfaces.py:72
 msgid "Allowed domains"
-msgstr ""
+msgstr "Domini consentiti"
 
 #: ../profiles/default/controlpanel.xml
 msgid "IFrame Embed Tile Settings"
@@ -52,7 +49,7 @@ msgstr ""
 #. Default: "Show tile title"
 #: ../interfaces.py:23
 msgid "label_show_tile"
-msgstr ""
+msgstr "Mostra il titolo della tile"
 
 #. Default: "allowTransparency"
 #: ../interfaces.py:64
@@ -87,7 +84,7 @@ msgstr ""
 #. Default: "Tile title"
 #: ../interfaces.py:18
 msgid "label_tile_title"
-msgstr ""
+msgstr "Titolo"
 
 #. Default: "width"
 #: ../interfaces.py:34
@@ -97,7 +94,7 @@ msgstr ""
 #. Default: "Url to embed"
 #: ../interfaces.py:29
 msgid "label_url_to_embed"
-msgstr ""
+msgstr "Url da incorporare"
 
 #. Default: "IFrame Embed Tile Settings"
 #: ../browser/controlpanel.py:11
