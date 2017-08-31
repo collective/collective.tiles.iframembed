@@ -24,7 +24,7 @@ msgstr "Domini consentiti"
 
 #: ../profiles/default/controlpanel.xml
 msgid "IFrame Embed Tile Settings"
-msgstr ""
+msgstr "Configurazione Tile iframe"
 
 #: ../configure.zcml:74
 msgid "IFrame Embed tile"
@@ -99,4 +99,4 @@ msgstr "Url da incorporare"
 #. Default: "IFrame Embed Tile Settings"
 #: ../browser/controlpanel.py:11
 msgid "tiles_iframembed_settings_label"
-msgstr ""
+msgstr "Configurazione Tile iframe"
