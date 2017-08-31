@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../interfaces.py:73
 msgid "One value for row"
-msgstr ""
+msgstr "Un valore per riga"
 
 #: ../configure.zcml:45
 msgid "Uninstalls the collective.tiles.iframembed add-on."
