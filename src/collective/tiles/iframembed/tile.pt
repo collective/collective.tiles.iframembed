@@ -12,13 +12,14 @@
                      scrolling view/data/scrolling|nothing;
                      allowTransparency view/data/allowTransparency|nothing;
                      style view/data/style|nothing;
-                     url view/data/url_to_embed;">
+                     url view/data/url_to_embed;
+                     full_url view/eval_query_string;">
 
        <h3 class="tileTitle"
             tal:condition="show_title">
             <span tal:content="title">Tile title</span>
       </h3>
-      <iframe tal:condition="view/iframe_validation" src="${url}" width="${width}" height="${height}"
+      <iframe tal:condition="view/iframe_validation" src="${full_url}" width="${width}" height="${height}"
         frameborder="${frameborder}" allowfullscreen="${allowfullscreen}"
         scrolling="${scrolling}" allowTransparency="${allowTransparency}"
         style="${style}">
