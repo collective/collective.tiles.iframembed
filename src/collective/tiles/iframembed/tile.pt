@@ -13,19 +13,20 @@
                      allowTransparency view/data/allowTransparency|nothing;
                      style view/data/style|nothing;
                      url view/data/url_to_embed;
+                     is_iframe_url_valid view/iframe_validation;
                      full_url view/eval_query_string;">
 
        <h3 class="tileTitle"
             tal:condition="show_title">
             <span tal:content="title">Tile title</span>
       </h3>
-      <iframe tal:condition="view/iframe_validation" src="${full_url}" width="${width}" height="${height}"
+      <iframe tal:condition="is_iframe_url_valid" src="${full_url}" width="${width}" height="${height}"
         frameborder="${frameborder}" allowfullscreen="${allowfullscreen}"
         scrolling="${scrolling}" allowTransparency="${allowTransparency}"
         style="${style}">
       </iframe>
 
-      <iframe tal:condition="python: not view.iframe_validation()" src="" scrolling="no">
+      <iframe tal:condition="python:not is_iframe_url_valid" src="" scrolling="no">
       </iframe>
     </div>
 
