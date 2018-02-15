@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.1 (unreleased)
+0.1.1 (2018-02-15)
 ------------------
 
 - Added check on query string.
