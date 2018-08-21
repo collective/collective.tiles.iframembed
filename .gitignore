@@ -20,3 +20,7 @@ output.xml
 *.swp
 log.html
 report.html
+.Python
+include/
+lib/
+pip-selfcheck.json
