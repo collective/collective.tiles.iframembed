@@ -28,9 +28,9 @@ class FrameEmbedTile(tiles.PersistentTile):
         o = urlparse(self.request.HTTP_REFERER)
         query_string = o.query
         if query_string.startswith('_authenticator'):
-            return self.data.get('url_to_embed')
+            return (self.data.get('url_to_embed')).strip('/')
             
         query_string = query_string.replace('?', "/", 1)
         query_string = query_string.replace('&', "?", 1)
         result = '%s/%s' % (self.data.get('url_to_embed'), query_string)
-        return result
+        return result.strip('/')
