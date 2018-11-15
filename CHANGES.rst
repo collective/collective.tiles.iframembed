@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.4 (unreleased)
+0.1.4 (2018-11-15)
 ------------------
 
 - Stripped trailing slash from iframe url
