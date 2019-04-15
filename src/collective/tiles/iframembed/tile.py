@@ -3,7 +3,7 @@ from plone import tiles
 from plone import api
 from plone.app.uuid.utils import uuidToObject
 from collective.tiles.iframembed.interfaces import IIFrameEmbedTilesSettings
-from urlparse import urlparse
+from six.moves.urllib.parse import urlparse
 
 
 class FrameEmbedTile(tiles.PersistentTile):
