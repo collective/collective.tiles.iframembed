@@ -5,7 +5,8 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix install profile. Add dependency to plone.app.tiles
+  [cekk]
 
 
 0.1.4 (2018-11-15)
@@ -39,4 +40,4 @@ Changelog
 ------------------
 
 - Initial release.
-  []
+  [cekk]
