@@ -27,6 +27,8 @@
       directory="profiles/default"
       description="Installs the collective.tiles.iframembed add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+
       />
 
   <genericsetup:importStep
@@ -72,6 +74,5 @@
       permission="zope2.View"
       for="*"
       />
-
 
 </configure>
