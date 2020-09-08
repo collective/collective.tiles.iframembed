@@ -8,14 +8,4 @@
 
   <records interface="collective.tiles.iframembed.interfaces.IIFrameEmbedTilesSettings" />
 
-  <record name="collective.tiles.iframembed.domanis">
-    <field type="plone.registry.field.Tuple">
-        <title>IFrame Embed tiles: available domains</title>
-        <description>A list of domains allowed for IFrame Embed tile</description>
-        <value_type type="plone.registry.field.TextLine" />
-    </field>
-    <value>
-        <element>example-element|Example element</element>
-    </value>
-  </record>
 </registry>

@@ -17,10 +17,12 @@ class HiddenProfiles(object):
 def post_install(context):
     """Post install script"""
     # Do something during the installation of this package
-
     USED_DOMAINS = api.portal.get_registry_record(
         'collective.tiles.iframembed.interfaces.IIFrameEmbedTilesSettings.available_domains'
     )
+
+    if not USED_DOMAINS:
+        USED_DOMAINS = ()
 
     DOMAINS = (
         u'https://www.facebook.com',

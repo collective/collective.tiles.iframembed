@@ -17,7 +17,7 @@
 
 
   <includeDependencies package="." />
-
+  <include file="upgrades.zcml"/>
   <include package=".browser" />
 
 
@@ -46,12 +46,21 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="cleanup"
+      title="collective.tiles.iframembed"
+      directory="profiles/cleanup"
+      description="Removes useless records in registry."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <genericsetup:importStep
       name="collective.tiles.iframembed-uninstall"
       title="collective.tiles.iframembed uninstall import step"
       description="Import step run during ininstalling collective.tiles.iframembed"
       handler=".setuphandlers.uninstall">
   </genericsetup:importStep>
+
 
   <utility
       factory=".setuphandlers.HiddenProfiles"
