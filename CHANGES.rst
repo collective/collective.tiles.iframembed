@@ -5,7 +5,8 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixed registry.xml and upgrade process
+  [daniele]
 
 
 0.1.4 (2018-11-15)
