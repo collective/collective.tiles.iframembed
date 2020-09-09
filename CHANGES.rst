@@ -5,6 +5,7 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
+- Added default domains when installing the product 
 - Fixed registry.xml and upgrade process
   [daniele]
 
