@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.interfaces import INonInstallable
 from zope.interface import implementer
+from plone import api
 
 
 @implementer(INonInstallable)
@@ -15,10 +16,8 @@ class HiddenProfiles(object):
 
 def post_install(context):
     """Post install script"""
-    if context.readDataFile('collectivetilesiframembed_default.txt') is None:
-        return
     # Do something during the installation of this package
-
+    
 
 def uninstall(context):
     """Uninstall script"""

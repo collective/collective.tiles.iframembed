@@ -6,33 +6,12 @@
 collective.tiles.iframembed
 ==============================================================================
 
-Tell me what your product does
+A tile which embeds external url inside an iframe
 
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+- domains validation
 
 
 Installation
@@ -56,7 +35,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.tiles.iframembed/issues
 - Source Code: https://github.com/collective/collective.tiles.iframembed
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support

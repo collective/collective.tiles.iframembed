@@ -6,16 +6,18 @@
     </value>
   </record>
 
-  <records interface="collective.tiles.iframembed.interfaces.IIFrameEmbedTilesSettings" />
-
-  <record name="collective.tiles.iframembed.domanis">
+  <record name="collective.tiles.iframembed.interfaces.IIFrameEmbedTilesSettings.available_domains" interface="collective.tiles.iframembed.interfaces.IIFrameEmbedTilesSettings" field="available_domains" purge="false">
     <field type="plone.registry.field.Tuple">
-        <title>IFrame Embed tiles: available domains</title>
-        <description>A list of domains allowed for IFrame Embed tile</description>
-        <value_type type="plone.registry.field.TextLine" />
+      <value_type type="plone.registry.field.TextLine" />
+      <default>
+        <element>https://www.facebook.com</element>
+        <element>https://www.youtube.com</element>
+        <element>https://www.regione.emilia-romagna.it</element>
+        <element>https://www2.regione.emilia-romagna.it</element>
+      </default>
     </field>
-    <value>
-        <element>example-element|Example element</element>
-    </value>
   </record>
+
+
+
 </registry>
