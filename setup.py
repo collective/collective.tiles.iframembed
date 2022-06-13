@@ -26,9 +26,9 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 5.1",
+        "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -46,7 +46,8 @@ setup(
         'plone.api',
         'setuptools',
         'z3c.jbot',
-        'plone.app.tiles'
+        'plone.app.tiles',
+        #'redturtle.tiles.management',    # activate to check/test the tile 
     ],
     extras_require={
         'test': [
