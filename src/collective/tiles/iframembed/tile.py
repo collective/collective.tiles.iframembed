@@ -3,8 +3,7 @@ from plone import tiles
 from plone import api
 from plone.app.uuid.utils import uuidToObject
 from collective.tiles.iframembed.interfaces import IIFrameEmbedTilesSettings
-from urlparse import urlparse
-
+from urllib.parse import urlparse
 
 class FrameEmbedTile(tiles.PersistentTile):
 
@@ -29,7 +28,7 @@ class FrameEmbedTile(tiles.PersistentTile):
         query_string = o.query
         if query_string.startswith('_authenticator'):
             return (self.data.get('url_to_embed')).rstrip('/')
-            
+
         query_string = query_string.replace('?', "/", 1)
         query_string = query_string.replace('&', "?", 1)
         result = '%s/%s' % (self.data.get('url_to_embed'), query_string)
