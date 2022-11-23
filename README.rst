@@ -29,19 +29,19 @@ Install collective.tiles.iframembed by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Compatibility
+-------------
+
+Plone >= 5.2 and Python3 from version 1.0.0.
+
+For previous Plone versions, use < 1.0.0
+
 
 Contribute
 ----------
 
 - Issue Tracker: https://github.com/collective/collective.tiles.iframembed/issues
 - Source Code: https://github.com/collective/collective.tiles.iframembed
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
