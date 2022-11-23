@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.6 (unreleased)
+1.0.0 (2022-11-23)
 ------------------
 
 - Major refactoring for python 3.8 and plone 5.2
