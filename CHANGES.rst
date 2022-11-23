@@ -5,7 +5,8 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Major refactoring for python 3.8 and plone 5.2
+  [axaroth]
 
 
 0.1.5 (2020-09-09)
