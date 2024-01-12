@@ -5,7 +5,8 @@ Changelog
 0.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle SearchableText in querystring
+  [daniele]
 
 
 0.1.5 (2020-09-09)
