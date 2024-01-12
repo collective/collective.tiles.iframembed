@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.6 (unreleased)
+0.1.6 (2024-01-12)
 ------------------
 
 - Handle SearchableText in querystring
